@@ -1,0 +1,10 @@
+levels 1
+
+level 1
+dim (20,20)
+#allowed keywords are:
+# tersect for terrain section
+
+# for tersect, values are:
+#  type subtype height topleft_of_section(tx,ty) bottomright_of_section(bx,by)
+tersect water deep 0 (9,9) (11,11)

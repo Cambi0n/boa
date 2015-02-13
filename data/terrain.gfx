@@ -1,0 +1,23 @@
+floor:
+ underground1:
+ - greyfloor1.png
+ underground2:
+ - underground_floor1.png
+ - underground_floor2.png
+shallow_water:
+ shallow1:
+ - ocean_water_grass_5_1.png
+wall:
+ granite:
+ - granite_wall1.png
+ - granite_wall1_1.png
+wall with small opening:
+ granite:
+ - granite_wall1_2.png
+wall with large opening:
+ granite:
+ - granite_wall1_2.png
+low obstacle:
+ granite:
+ - granite_wall1_2.png
+ 

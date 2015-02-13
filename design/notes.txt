@@ -1,0 +1,38 @@
+things that aren't implemented strictly according to Pathfinder rules
+- detect spells act like burst rather than emanation
+- detect spells don't overwhelm if aura source twice char level
+- no lingering auras
+- light and vision: there are 4 light levels, bright, normal, dim, ultradim.
+  The ultradim setting was necessary to handle low light vision.  Objects
+  have ranges of normal and dim, but creature with low light vision can
+  see twice as far, indicating the ability to see in light less than
+  dim.  Default values are ultradim = 1, dim = 5, normal = 10, bright = 50
+  So 2 dim sources make a tile normal light, but it takes 5 ultradim
+  to make dim.
+- touch spells and multiple targets: When players are moving simultaneously,
+  it would be annoying to have to be in a static place while the caster runs
+  around touching, or to time it perfectly.  Instead, I turn most 'touch
+  multiple targets' spells into burst spells.  This does change things, since
+  the caster can now do more 'non-touching' movement, but targets that might
+  not be within line of effect from a single casting point won't both be able
+  to be targeted.
+
+things not implemented yet:
+- endure elements spell
+- detect spells change move_mode to phased if they detect enemy
+- concealment and cover from terrain
+- detection via sound, smell, tremorsense
+
+rules questions and my implementation:
+- spell resistance, only use highest if multiple sources
+- miss chances, use 1 roll, but that roll uses multiplication of 'not miss' chances.
+  For example, if a target has 2 miss chances from different sources, each of 20%, then
+  total miss chance will be 1 - (0.8*0.8) = 36%.  This is equivalent to making 2 rolls
+  each at 20% miss chance.
+- usage of detect spells when not in initiative mode.  How often do you get to choose
+  new area for detection?  I choose 15 sec.
+  
+game details:
+- a mobile object is either a monster or a class_based_mobile_object
+- monsters have monster_type (and possibly monster_subtype) class_based mobile objects have race
+- a class_based_mobile_object can have an .objtype of 'monster'

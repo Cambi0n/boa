@@ -1,0 +1,11 @@
+human:
+ warrior:
+ - human_warrior_1.png
+ wizard:
+ - human_wizard_1.png
+dwarf:
+ warrior:
+ - dwarf_warrior_1.png
+halfelf:
+ cleric:
+ - halfelf_cleric.png

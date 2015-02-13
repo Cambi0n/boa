@@ -1,0 +1,17 @@
+longsword:
+ - sword.png
+battleaxe:
+ - AxeBattle.png 
+weapon:
+ sword:
+  - sword.png
+torch:
+ - Torch.png
+backpack:
+ - backpack1.png
+flask_of_water:
+ - PotionAquamarine.png
+holy_water:
+ - PotionAquamarine.png
+five_pounds_powdered_silver:
+ - PotionSmallGrey.png

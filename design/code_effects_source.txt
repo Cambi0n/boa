@@ -1,0 +1,57 @@
+ master list of binary temporary effect questions
+ all must be phrased so that the normal condition is True
+ 'can_choose_orders','can_take_actions',
+ 'can_do_move_action','can_do_standard_action','can_do_full_action','can_do_free_actions'
+ 'can_take_five_foot_step','can_run','can_charge'
+ 'can_attack'
+ 'can_use_sling','can_use_bow','can_use_crossbow','can_do_ranged_attack'
+ 'can_speak','can_hear','can_see','cant_speak_all_languages','cant_understand_all_languages'
+ 'can_do_cast_somatics','can_cast_spell','can_concentrate_on_spell'
+ 'not_fleeing', 'not_sleeping'
+ 'can_pick_up_items','not_prone','can_stand_up'
+ 'not_invisible','detectable_by_undead'
+ 'not_incorporeal' 
+
+ master list of bonus effect and mult effect inquiries.
+ Each 'value_being_checked' parameter is a tuple or is turned into a tuple
+ This tuple might have only 1 entry, or it might have 2.
+ If it has 2, the second is on the indented lines below
+ 'tohit', 'damage', 'hp', 'armor_class', 'movespeed'
+ 'miss chance'
+ 'str','dex','con','int','wis','cha'	# for bonus directly to ability	
+ 'ability_check'	# for bonus to an ability check
+ 	'str','dex','con','int','wis','cha'
+ 'saving_throw'
+ 	'will','reflex','fortitude'
+ 'skill'
+ 	# list of all skills
+ 
+source dictionary keys and possible values
+reason_for_check (in find_bonus) uses same possibilities
+reason_for_throw (saving throws) uses same possibilities
+
+key    			values
+spell_name    	name of spell, a key for class in spell_list.complete_dict_of_spells
+condition_name  name of condition, behaves very similar to spell_name entry;
+                        name is key for class in conditions.py
+                        i.e., strings passed to add_tempororary_effects are names of methods
+                        within that class
+race_name    	name of race, behaves very similar to spell_name entry;
+                        name is key for class in races.py
+                        i.e., strings passed to add_tempororary_effects are names of methods
+                        within that class
+monster_type_name    	name of monster type, behaves very similar to spell_name entry;
+class_name    	name of class, behaves very similar to spell_name entry;
+
+attack_type    	melee, ranged, melee touch, ranged touch
+obj_id        	id of source object
+attack_hands    mainhand, offhand, bothhands, unarmed
+spell_as_class 	name of adventure class on which this cast is based (for multiclass chars)
+weapon_id    	id of weapon
+natural_attack  bite, claw, etc
+reason			list of strings that could be anything
+ 
+
+triggers, must be one of the usual game actions
+'move','attack','attacked','cast spell',
+'turn undead','channel energy'

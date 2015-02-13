@@ -1,0 +1,33 @@
+monsters:
+- amount: 1
+  distribution_type: placement
+  startpos:
+  - - level1
+    - - rect
+      - - [7, 5]
+        - [12, 5]
+  subtype: cave
+  type: orc
+possiblestartpos:
+- - level1
+  - - rect
+    - - [8, 18]
+      - [11, 19]
+sections:
+- basicheight: 0
+  basicsubtype: underground1
+  basictype: floor
+  dim: [20, 20]
+  lighting: normal
+  name: level1
+  tersecs:
+  - bottomright: [11, 11]
+    height: 0
+    subtype: shallow1
+    topleft: [9, 9]
+    type: shallow_water
+  - bottomright: [10, 16]
+    height: 0
+    subtype: granite
+    topleft: [8, 16]
+    type: wall

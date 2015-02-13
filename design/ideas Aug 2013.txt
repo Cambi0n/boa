@@ -1,0 +1,91 @@
+Do away with standard and move actions
+
+Use 10 time intervals, 0.5 sec each
+Actions take a certain time interval
+Moving 1 square typically takes 1 time interval
+
+OR
+Use 4 time intervals, 2 sec each
+one action per time interval
+can move 2 (or 3) squares per time interval
+(idea is to simplify coordination among human players, only
+4 phases to  time things)
+
+Have limited "life" = hp.  Say 1 or 2 (or more at higher levels)
+Have stamina points.  Most actions use stamina.
+Defending uses stamina too.  More stamina used if wearing heavy armor.
+Stamina points start out high, say in the hundreds (or thousands at higher levels).
+When stamina gets low, defense (and offense?) becomes worse.
+When stamina gets low, movement is slower.
+There are 2 kinds of "doing nothing" during a time interval:
+	improve defense (no stamina gain)
+	gain stamina (no defense improvement)
+
+Basic idea is that it only takes 1 or 2 good hits to the body to kill.
+But most of the fight is spent fending off the big blows.
+Eventually one side wears down and the big blows slip through and kill.
+
+On defense, stamina represents orderly defense such as dodging and blocking.
+When stamina is high, the chance to dodge or block an average attack is quite high, say 98%.
+
+On offense, low stamina means the chance to overcome a dodge or block is low due to slow movements.
+
+To score a hit to hp requires getting past both the stamina defense and armor.
+Something like the following tables:
+Stamina		chance to overcome
+500 (full)	1%
+400		3%
+300		5%
+200		10%
+100		20%
+0		55%
+
+OR
+Stamina		chance to overcome
+500 (full)	0.1%
+400		0.2%
+300		0.4%
+250		0.8%
+249		5%
+200		5%
+100		5%
+99		10%
+50		10%
+49		25%
+0		55%
+
+Armor		chance to overcome
+12		10%
+10		15%
+8		20%
+6		25%
+4		40%
+2		60%
+0		80%
+
+Cold causes temporary reduction in stamina (for as long as cold exists)
+acid causes permanent, but gradual reduction in armor
+fire causes direct loss of hp, but takes time
+
+weapons differ in:
+	the amount of stamina to swing
+	the amount of stamina required to defend against it? Or make defense stamina usage depend on combat move only?
+	bonus to overcome armor
+	time interval to swing?
+
+different combat moves may:
+	require different stamina to execute (modify weapon stamina usage?)
+	cause different stamina usage to defend against (again, modified from weapon base?)
+	modified chance to overcome armor
+	modified damage to hp once past armor
+	different time interval used
+	cause temporary reduction in stamina level (stun, etc)
+	hit multiple targets
+
+Have 2 kinds of mana pools.  One for ordinary magical actions.  One for extraordinary, once per day kind of things.
+Maybe the second mana pool is only available if you find a rare potion.  One potion per extraordinary action.
+Adds strategy, when to use the extraordinary action.  Plus fun to find the super potion.
+
+Normal magic casting uses stamina, not mana?
+
+Have mental stamina in addition to physical stamina?  Wouldn't mental stamina be same as mana then?

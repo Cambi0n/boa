@@ -1,0 +1,47 @@
+desc: desc
+monsters:
+- amount: 1
+  distribution_type: placement
+  startpos:
+  - - level1
+    - - rect
+      - - [4, 17]
+        - [4, 17]
+  species: orc
+objects:
+- amount: 1
+  distribution_type: placement
+  startpos:
+  - - level1
+    - - rect
+      - - [8, 19]
+        - [9, 19]
+  name: longsword
+possiblestartpos:
+- - level1
+  - - rect
+    - - [10, 17]
+      - [11, 17]
+sections:
+- basicheight: 0
+  basicsubtype: underground1
+  basictype: floor
+  dim: [20, 20]
+  lighting: normal
+  name: level1
+  tersecs:
+  - bottomright: [11, 11]
+    height: 0
+    subtype: shallow1
+    topleft: [9, 9]
+    type: shallow_water
+  - bottomright: [10, 16]
+    height: 0
+    subtype: granite
+    topleft: [8, 16]
+    type: wall
+  - bottomright: [8, 17]
+    height: 0
+    subtype: granite
+    topleft: [8, 17]
+    type: low obstacle

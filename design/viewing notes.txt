@@ -1,0 +1,13 @@
+change tilesWithinView and tilesWithinDimView to be tiles_within_party_normal_view
+and tiles_within_party_dim_view, keep in game.py?
+this changes it from being the total viewed tiles always used to the party viewed tiles
+which is only used when SHARED_SIGHT is in effect
+
+create tiles_currently_in_normal_view in mainview.py
+create tiles_currently_in_dim_view in mainview.py
+these contain actual list of tiles currently displayed
+they can be switched from char to char, or from char to party or vice versa
+
+viewlevelchanges should be in mainview.py, and can be determined
+from 2 new variables described above
+

@@ -1,0 +1,46 @@
+# The name: field should be unique.
+# Quality (masterwork, magical, etc.) will be handled by the program.
+# The medium size weapons should be described.  Changes in size
+# (and corresponding changes in damage) will be handled by the program.
+# The material: field contains materials that are essential to the
+# normal usage of the object.  That is, a weapon might contain a
+# jewel in the pomel, but that isn't essential to the usage
+# of the weapon
+
+
+- name: longsword
+  display_name: Longsword
+  short_desc: The standard longsword
+  long_desc:
+        A sword, about 3.5 feet
+        in length, used to slash at things.
+  allowed_slots: [mainhand, offhand, bothhands]
+  type: [weapon]
+  subtype: [sword]
+  weight: 4.0
+  material: [steel]
+  value: 15
+  melee_damage:
+    - [1d8, slash]
+  critical:
+    range: [19,20]
+    damage_mult: 2.0
+    
+- name: battleaxe
+  display_name: Battleaxe
+  short_desc: The standard axe
+  long_desc: 
+        An axe having a 2-edged blade at
+        the end of a 4 foot long shaft.
+  allowed_slots: [mainhand, offhand, bothhands]
+  type: [weapon]
+  subtype: [axe]
+  weight: 10.0
+  material: [steel, wood]
+  value: 10
+  melee_damage:
+    - [1d8, slash]
+  critical:
+    range: [20]
+    damage_mult: 3.0
+  

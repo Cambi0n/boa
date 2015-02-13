@@ -1,0 +1,113 @@
+- name: torch
+  display_name: Torch
+  short_desc: Basic light source
+  long_desc: 
+        Rags soaked in pitch or animal oil wrapped around the end
+        of a 1.5 foot pole or a bundle of sticks.
+  allowed_slots: [mainhand, offhand]
+  type: [carried,light-source]
+  subtype: [torch]
+  weight: 1.0
+  material: [wood]
+  value: 0.01
+  melee_damage:
+    - [1d3, bludgeon]
+    - [1d1, fire]
+  is_a_light: True
+  is_showing_light: False
+  normal_light_radius: 4
+  dim_light_radius: 8
+  ultradim_light_radius: 16
+  equippable: True
+  
+- name: backpack
+  display_name: Backpack
+  short_desc: Pack used to store stuff.
+  long_desc: 
+        A large container worn on the back, with all kinds
+        of compartments and hooks.
+  allowed_slots: [storage]
+  type: [carried,container]
+  weight: 2.0
+  material: [leather]
+  value: 2
+  can_contain_items: True
+  equippable: True
+  
+- name: flask_of_water
+  display_name: Flask of water
+  short_desc: A pint of water in a flask.
+  long_desc: 
+        A pint of water in a flask to be used for anything you
+        like to use water for.
+  allowed_slots: [mainhand,offhand]
+  type: [carried,misc]
+  weight: 1.0
+  material: [water,glass]
+  value: 0.1
+  equippable: True
+  
+- name: holy_water
+  display_name: Holy water
+  short_desc: A pint of holy water in a flask.
+  long_desc: 
+        A pint of holy water in a flask to be used for anything you
+        like to use holy water for.
+  allowed_slots: [mainhand,offhand]
+  type: [carried,misc]
+  weight: 1.0
+  material: [water,glass]
+  value: 25.
+  equippable: True
+  
+- name: unholy_water
+  display_name: Unholy water
+  short_desc: A pint of unholy water in a flask.
+  long_desc: 
+        A pint of unholy water in a flask to be used against good creatures. How could you?
+  allowed_slots: [mainhand,offhand]
+  type: [carried,misc]
+  weight: 1.0
+  material: [water,glass]
+  value: 25.
+  equippable: True
+  
+- name: five_pounds_powdered_silver
+  display_name: Five pounds of powdered silver
+  short_desc: Five pounds of powdered silver in a small sack.
+  long_desc: 
+        Five pounds of powdered silver in a small sack, used for
+        making Holy water.
+  allowed_slots: [mainhand,offhand]
+  type: [carried,misc]
+  weight: 5.0
+  material: [metal, silver]
+  value: 25.
+  equippable: True
+  
+- name: holy_symbol_wooden
+  display_name: Holy Symbol, wooden
+  short_desc: A wooden carving representing your deity.
+  long_desc: 
+        A wooden carving representing your deity, usable as a Holy Symbol.
+  allowed_slots: [mainhand,offhand]
+  type: [carried,holy_symbol]
+  weight: 0.0
+  material: [wood]
+  value: 1.
+  equippable: True
+
+- name: holy_symbol_silver
+  display_name: Holy Symbol, silver
+  short_desc: A silver carving representing your deity.
+  long_desc: 
+        A silver carving representing your deity, usable as a Holy Symbol.
+  allowed_slots: [mainhand,offhand]
+  type: [carried,holy_symbol]
+  weight: 0.0
+  material: [metal, silver]
+  value: 25.
+  equippable: True
+  
+  
+  
